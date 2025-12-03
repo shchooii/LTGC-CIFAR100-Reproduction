@@ -1,5 +1,4 @@
-# LTGC: Long-Tail Recognition via Leveraging Generated Content [Official, CVPR 2024, Oral]
-[[Project]](https://ltgccode.github.io/) [[Paper]](https://arxiv.org/pdf/2403.05854.pdf)
+# LTGC CIFAR100 Reproduction
 
 > [!NOTE]
 > This repository contains a **comprehensive project report** detailing the reproduction and adaptation of the LTGC framework on the **CIFAR-100 Long-Tailed dataset**.
