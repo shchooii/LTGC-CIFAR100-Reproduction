@@ -1,0 +1,167 @@
+[INFO] Using device: cuda
+[INFO] data_dir   = data/CIFAR100_LT
+[INFO] train_txt  = ./data_txt/CIFAR100_LT/CIFAR100_LT_train.txt
+[INFO] test_txt   = ./data_txt/CIFAR100_LT/CIFAR100_LT_test.txt
+[INFO] use_generated = False
+[INFO] gen_dir    = None
+[INFO] loss       = focal
+[INFO] save_path  = ckpt_focal_baseline.pth
+[INFO] #train=10847, #test=10000
+[INFO] #classes=100
+[INFO] cls_num_list (first 10): [500, 477, 455, 434, 415, 396, 378, 361, 344, 328]
+[HMT] head   : 0 ~ 39  (#=40)
+[HMT] medium : 40 ~ 69  (#=30)
+[HMT] tail   : 70 ~ 99  (#=30)
+
+=== Epoch 1/30 | lr = 0.10000 ===
+[Train] Loss: 3.7762 | Acc@1: 10.80%
+[Test ] Loss: 4.9659 | Acc@1: 5.04%
+[INFO] New best Acc@1: 5.04% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 2/30 | lr = 0.10000 ===
+[Train] Loss: 3.2955 | Acc@1: 15.08%
+[Test ] Loss: 4.7533 | Acc@1: 6.02%
+[INFO] New best Acc@1: 6.02% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 3/30 | lr = 0.10000 ===
+[Train] Loss: 3.1768 | Acc@1: 16.80%
+[Test ] Loss: 4.5863 | Acc@1: 7.70%
+[INFO] New best Acc@1: 7.70% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 4/30 | lr = 0.10000 ===
+[Train] Loss: 3.0665 | Acc@1: 18.95%
+[Test ] Loss: 4.5775 | Acc@1: 7.82%
+[INFO] New best Acc@1: 7.82% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 5/30 | lr = 0.10000 ===
+[Train] Loss: 3.0114 | Acc@1: 19.94%
+[Test ] Loss: 4.5710 | Acc@1: 8.75%
+[INFO] New best Acc@1: 8.75% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 6/30 | lr = 0.10000 ===
+[Train] Loss: 2.9572 | Acc@1: 20.64%
+[Test ] Loss: 4.4188 | Acc@1: 9.82%
+[INFO] New best Acc@1: 9.82% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 7/30 | lr = 0.10000 ===
+[Train] Loss: 2.8677 | Acc@1: 22.66%
+[Test ] Loss: 4.4555 | Acc@1: 10.17%
+[INFO] New best Acc@1: 10.17% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 8/30 | lr = 0.10000 ===
+[Train] Loss: 2.8034 | Acc@1: 23.04%
+[Test ] Loss: 4.3845 | Acc@1: 11.14%
+[INFO] New best Acc@1: 11.14% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 9/30 | lr = 0.10000 ===
+[Train] Loss: 2.7577 | Acc@1: 23.88%
+[Test ] Loss: 4.4636 | Acc@1: 10.94%
+
+=== Epoch 10/30 | lr = 0.10000 ===
+[Train] Loss: 2.6879 | Acc@1: 25.87%
+[Test ] Loss: 4.1207 | Acc@1: 13.16%
+[INFO] New best Acc@1: 13.16% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 11/30 | lr = 0.10000 ===
+[Train] Loss: 2.6417 | Acc@1: 26.60%
+[Test ] Loss: 4.0853 | Acc@1: 13.78%
+[INFO] New best Acc@1: 13.78% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 12/30 | lr = 0.10000 ===
+[Train] Loss: 2.5690 | Acc@1: 27.65%
+[Test ] Loss: 4.2672 | Acc@1: 12.35%
+
+=== Epoch 13/30 | lr = 0.10000 ===
+[Train] Loss: 2.5165 | Acc@1: 28.67%
+[Test ] Loss: 4.1490 | Acc@1: 14.40%
+[INFO] New best Acc@1: 14.40% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 14/30 | lr = 0.10000 ===
+[Train] Loss: 2.4473 | Acc@1: 29.68%
+[Test ] Loss: 4.0263 | Acc@1: 13.12%
+
+=== Epoch 15/30 | lr = 0.10000 ===
+[Train] Loss: 2.3654 | Acc@1: 31.58%
+[Test ] Loss: 3.9867 | Acc@1: 15.45%
+[INFO] New best Acc@1: 15.45% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 16/30 | lr = 0.10000 ===
+[Train] Loss: 2.3178 | Acc@1: 32.57%
+[Test ] Loss: 4.1115 | Acc@1: 15.11%
+
+=== Epoch 17/30 | lr = 0.10000 ===
+[Train] Loss: 2.2529 | Acc@1: 33.82%
+[Test ] Loss: 3.9839 | Acc@1: 15.11%
+
+=== Epoch 18/30 | lr = 0.10000 ===
+[Train] Loss: 2.1732 | Acc@1: 35.38%
+[Test ] Loss: 3.8086 | Acc@1: 17.56%
+[INFO] New best Acc@1: 17.56% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 19/30 | lr = 0.10000 ===
+[Train] Loss: 2.1239 | Acc@1: 36.52%
+[Test ] Loss: 3.7796 | Acc@1: 18.57%
+[INFO] New best Acc@1: 18.57% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 20/30 | lr = 0.10000 ===
+[Train] Loss: 2.0546 | Acc@1: 38.04%
+[Test ] Loss: 3.8526 | Acc@1: 18.18%
+
+=== Epoch 21/30 | lr = 0.10000 ===
+[Train] Loss: 2.0139 | Acc@1: 38.73%
+[Test ] Loss: 3.6281 | Acc@1: 20.30%
+[INFO] New best Acc@1: 20.30% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 22/30 | lr = 0.10000 ===
+[Train] Loss: 1.9538 | Acc@1: 40.55%
+[Test ] Loss: 3.5867 | Acc@1: 20.81%
+[INFO] New best Acc@1: 20.81% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 23/30 | lr = 0.10000 ===
+[Train] Loss: 1.8951 | Acc@1: 41.38%
+[Test ] Loss: 3.6944 | Acc@1: 18.89%
+
+=== Epoch 24/30 | lr = 0.10000 ===
+[Train] Loss: 1.8244 | Acc@1: 42.77%
+[Test ] Loss: 3.5553 | Acc@1: 21.16%
+[INFO] New best Acc@1: 21.16% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 25/30 | lr = 0.10000 ===
+[Train] Loss: 1.8294 | Acc@1: 42.92%
+[Test ] Loss: 3.3826 | Acc@1: 22.09%
+[INFO] New best Acc@1: 22.09% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 26/30 | lr = 0.10000 ===
+[Train] Loss: 1.7487 | Acc@1: 44.49%
+[Test ] Loss: 3.3064 | Acc@1: 23.49%
+[INFO] New best Acc@1: 23.49% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 27/30 | lr = 0.10000 ===
+[Train] Loss: 1.6791 | Acc@1: 46.49%
+[Test ] Loss: 3.2680 | Acc@1: 24.36%
+[INFO] New best Acc@1: 24.36% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 28/30 | lr = 0.10000 ===
+[Train] Loss: 1.6700 | Acc@1: 46.92%
+[Test ] Loss: 3.3606 | Acc@1: 23.55%
+
+=== Epoch 29/30 | lr = 0.10000 ===
+[Train] Loss: 1.6395 | Acc@1: 47.32%
+[Test ] Loss: 3.2687 | Acc@1: 25.94%
+[INFO] New best Acc@1: 25.94% → checkpoint saved to ckpt_focal_baseline.pth
+
+=== Epoch 30/30 | lr = 0.10000 ===
+[Train] Loss: 1.5674 | Acc@1: 49.64%
+[Test ] Loss: 3.3066 | Acc@1: 24.91%
+
+[RESULT] Best Test Acc@1: 25.94%
+
+[INFO] Loading best checkpoint for group-wise evaluation...
+
+[Group-wise Evaluation]
+  total  | Acc:  25.94% | Micro-F1:  25.94% | Macro-F1:  20.55%
+  head   | Acc:  48.95% | Micro-F1:  30.76% | Macro-F1:  32.32%
+  medium | Acc:  19.10% | Micro-F1:  27.52% | Macro-F1:  22.44%
+  tail   | Acc:   2.10% | Micro-F1:   4.06% | Macro-F1:   2.97%
+
+[RESULT] Best Test Acc@1: 25.94%

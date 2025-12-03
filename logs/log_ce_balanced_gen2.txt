@@ -1,0 +1,196 @@
+[INFO] Using device: cuda
+[INFO] data_dir   = data/CIFAR100_LT
+[INFO] train_txt  = ./data_txt/CIFAR100_LT/CIFAR100_LT_train.txt
+[INFO] test_txt   = ./data_txt/CIFAR100_LT/CIFAR100_LT_test.txt
+[INFO] use_generated = True
+[INFO] gen_dir    = data/CIFAR100_LT/gen_train
+[INFO] loss       = ce
+[INFO] save_path  = ckpt_ce_balanced_gen.pth
+[INFO] Using generated data: base=10847, gen=2176, total=13023
+[INFO] #train=13023, #test=10000
+[INFO] #classes=100
+[INFO] cls_num_list (first 10): [536, 543, 512, 485, 466, 449, 438, 415, 404, 375]
+[HMT] head   : 0 ~ 39  (#=40)
+[HMT] medium : 40 ~ 69  (#=30)
+[HMT] tail   : 70 ~ 99  (#=30)
+
+=== Epoch 1/30 | lr = 0.10000 ===
+Epoch [1] Step [100/102] Loss: 3.9822 | Acc@1: 8.59%
+[Train] Loss: 3.9764 | Acc@1: 8.65%
+[Test ] Loss: 5.1474 | Acc@1: 4.85%
+[INFO] New best Acc@1: 4.85% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 2/30 | lr = 0.10000 ===
+Epoch [2] Step [100/102] Loss: 3.5860 | Acc@1: 13.27%
+[Train] Loss: 3.5884 | Acc@1: 13.22%
+[Test ] Loss: 5.0387 | Acc@1: 5.89%
+[INFO] New best Acc@1: 5.89% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 3/30 | lr = 0.10000 ===
+Epoch [3] Step [100/102] Loss: 3.4987 | Acc@1: 15.19%
+[Train] Loss: 3.4979 | Acc@1: 15.21%
+[Test ] Loss: 4.9566 | Acc@1: 6.79%
+[INFO] New best Acc@1: 6.79% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 4/30 | lr = 0.10000 ===
+Epoch [4] Step [100/102] Loss: 3.4345 | Acc@1: 16.04%
+[Train] Loss: 3.4348 | Acc@1: 16.01%
+[Test ] Loss: 4.7632 | Acc@1: 7.44%
+[INFO] New best Acc@1: 7.44% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 5/30 | lr = 0.10000 ===
+Epoch [5] Step [100/102] Loss: 3.3550 | Acc@1: 17.49%
+[Train] Loss: 3.3555 | Acc@1: 17.54%
+[Test ] Loss: 4.6946 | Acc@1: 8.37%
+[INFO] New best Acc@1: 8.37% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 6/30 | lr = 0.10000 ===
+Epoch [6] Step [100/102] Loss: 3.3159 | Acc@1: 18.62%
+[Train] Loss: 3.3139 | Acc@1: 18.67%
+[Test ] Loss: 4.7724 | Acc@1: 8.07%
+
+=== Epoch 7/30 | lr = 0.10000 ===
+Epoch [7] Step [100/102] Loss: 3.2425 | Acc@1: 20.19%
+[Train] Loss: 3.2411 | Acc@1: 20.20%
+[Test ] Loss: 4.7049 | Acc@1: 9.63%
+[INFO] New best Acc@1: 9.63% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 8/30 | lr = 0.10000 ===
+Epoch [8] Step [100/102] Loss: 3.2084 | Acc@1: 21.27%
+[Train] Loss: 3.2065 | Acc@1: 21.22%
+[Test ] Loss: 4.7213 | Acc@1: 9.12%
+
+=== Epoch 9/30 | lr = 0.10000 ===
+Epoch [9] Step [100/102] Loss: 3.1541 | Acc@1: 21.90%
+[Train] Loss: 3.1513 | Acc@1: 21.91%
+[Test ] Loss: 4.6441 | Acc@1: 9.86%
+[INFO] New best Acc@1: 9.86% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 10/30 | lr = 0.10000 ===
+Epoch [10] Step [100/102] Loss: 3.1100 | Acc@1: 22.53%
+[Train] Loss: 3.1091 | Acc@1: 22.58%
+[Test ] Loss: 4.6385 | Acc@1: 10.48%
+[INFO] New best Acc@1: 10.48% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 11/30 | lr = 0.10000 ===
+Epoch [11] Step [100/102] Loss: 3.0464 | Acc@1: 23.83%
+[Train] Loss: 3.0476 | Acc@1: 23.83%
+[Test ] Loss: 4.4825 | Acc@1: 10.96%
+[INFO] New best Acc@1: 10.96% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 12/30 | lr = 0.10000 ===
+Epoch [12] Step [100/102] Loss: 2.9873 | Acc@1: 24.82%
+[Train] Loss: 2.9879 | Acc@1: 24.76%
+[Test ] Loss: 4.5295 | Acc@1: 11.29%
+[INFO] New best Acc@1: 11.29% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 13/30 | lr = 0.10000 ===
+Epoch [13] Step [100/102] Loss: 2.9158 | Acc@1: 26.84%
+[Train] Loss: 2.9154 | Acc@1: 26.84%
+[Test ] Loss: 4.4979 | Acc@1: 11.95%
+[INFO] New best Acc@1: 11.95% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 14/30 | lr = 0.10000 ===
+Epoch [14] Step [100/102] Loss: 2.8640 | Acc@1: 27.27%
+[Train] Loss: 2.8664 | Acc@1: 27.30%
+[Test ] Loss: 4.1885 | Acc@1: 15.05%
+[INFO] New best Acc@1: 15.05% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 15/30 | lr = 0.10000 ===
+Epoch [15] Step [100/102] Loss: 2.8153 | Acc@1: 28.75%
+[Train] Loss: 2.8134 | Acc@1: 28.77%
+[Test ] Loss: 4.3659 | Acc@1: 13.44%
+
+=== Epoch 16/30 | lr = 0.10000 ===
+Epoch [16] Step [100/102] Loss: 2.7574 | Acc@1: 29.93%
+[Train] Loss: 2.7579 | Acc@1: 29.97%
+[Test ] Loss: 4.1437 | Acc@1: 13.97%
+
+=== Epoch 17/30 | lr = 0.10000 ===
+Epoch [17] Step [100/102] Loss: 2.7186 | Acc@1: 31.14%
+[Train] Loss: 2.7212 | Acc@1: 31.05%
+[Test ] Loss: 4.2589 | Acc@1: 13.79%
+
+=== Epoch 18/30 | lr = 0.10000 ===
+Epoch [18] Step [100/102] Loss: 2.6594 | Acc@1: 32.16%
+[Train] Loss: 2.6597 | Acc@1: 32.14%
+[Test ] Loss: 4.1793 | Acc@1: 15.51%
+[INFO] New best Acc@1: 15.51% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 19/30 | lr = 0.10000 ===
+Epoch [19] Step [100/102] Loss: 2.6006 | Acc@1: 32.98%
+[Train] Loss: 2.6007 | Acc@1: 33.01%
+[Test ] Loss: 4.3025 | Acc@1: 15.10%
+
+=== Epoch 20/30 | lr = 0.10000 ===
+Epoch [20] Step [100/102] Loss: 2.5496 | Acc@1: 34.60%
+[Train] Loss: 2.5492 | Acc@1: 34.58%
+[Test ] Loss: 4.1691 | Acc@1: 16.70%
+[INFO] New best Acc@1: 16.70% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 21/30 | lr = 0.10000 ===
+Epoch [21] Step [100/102] Loss: 2.4752 | Acc@1: 36.20%
+[Train] Loss: 2.4770 | Acc@1: 36.19%
+[Test ] Loss: 4.0894 | Acc@1: 16.90%
+[INFO] New best Acc@1: 16.90% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 22/30 | lr = 0.10000 ===
+Epoch [22] Step [100/102] Loss: 2.4499 | Acc@1: 37.44%
+[Train] Loss: 2.4519 | Acc@1: 37.36%
+[Test ] Loss: 4.0819 | Acc@1: 17.21%
+[INFO] New best Acc@1: 17.21% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 23/30 | lr = 0.10000 ===
+Epoch [23] Step [100/102] Loss: 2.3931 | Acc@1: 38.23%
+[Train] Loss: 2.3920 | Acc@1: 38.26%
+[Test ] Loss: 4.1604 | Acc@1: 17.89%
+[INFO] New best Acc@1: 17.89% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 24/30 | lr = 0.10000 ===
+Epoch [24] Step [100/102] Loss: 2.3427 | Acc@1: 39.59%
+[Train] Loss: 2.3420 | Acc@1: 39.62%
+[Test ] Loss: 4.0024 | Acc@1: 18.77%
+[INFO] New best Acc@1: 18.77% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 25/30 | lr = 0.10000 ===
+Epoch [25] Step [100/102] Loss: 2.2785 | Acc@1: 40.64%
+[Train] Loss: 2.2800 | Acc@1: 40.67%
+[Test ] Loss: 3.6616 | Acc@1: 22.04%
+[INFO] New best Acc@1: 22.04% → checkpoint saved to ckpt_ce_balanced_gen.pth
+
+=== Epoch 26/30 | lr = 0.10000 ===
+Epoch [26] Step [100/102] Loss: 2.2291 | Acc@1: 42.29%
+[Train] Loss: 2.2316 | Acc@1: 42.29%
+[Test ] Loss: 3.7685 | Acc@1: 21.47%
+
+=== Epoch 27/30 | lr = 0.10000 ===
+Epoch [27] Step [100/102] Loss: 2.1945 | Acc@1: 42.66%
+[Train] Loss: 2.1925 | Acc@1: 42.69%
+[Test ] Loss: 3.9538 | Acc@1: 20.91%
+
+=== Epoch 28/30 | lr = 0.10000 ===
+Epoch [28] Step [100/102] Loss: 2.1555 | Acc@1: 43.64%
+[Train] Loss: 2.1541 | Acc@1: 43.69%
+[Test ] Loss: 3.9796 | Acc@1: 21.36%
+
+=== Epoch 29/30 | lr = 0.10000 ===
+Epoch [29] Step [100/102] Loss: 2.1225 | Acc@1: 44.41%
+[Train] Loss: 2.1201 | Acc@1: 44.42%
+[Test ] Loss: 4.0605 | Acc@1: 20.23%
+
+=== Epoch 30/30 | lr = 0.10000 ===
+Epoch [30] Step [100/102] Loss: 2.0860 | Acc@1: 45.52%
+[Train] Loss: 2.0912 | Acc@1: 45.40%
+[Test ] Loss: 3.9357 | Acc@1: 20.22%
+
+[RESULT] Best Test Acc@1: 22.04%
+
+[INFO] Loading best checkpoint for group-wise evaluation...
+
+[Group-wise Evaluation]
+  total  | Acc:  22.04% | Micro-F1:  22.04% | Macro-F1:  16.61%
+  head   | Acc:  42.00% | Micro-F1:  26.83% | Macro-F1:  27.02%
+  medium | Acc:  17.07% | Micro-F1:  22.98% | Macro-F1:  18.59%
+  tail   | Acc:   0.40% | Micro-F1:   0.79% | Macro-F1:   0.73%
+
+[RESULT] Best Test Acc@1: 22.04%
