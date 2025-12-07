@@ -83,15 +83,11 @@ python lmm_extension.py -exi $EXIST_DESCRIPTION_FILE -m $MAX_GENERATED_IMAGES -e
 python draw_i2t.py -ext $EXTEND_DESCRIPTION_FILE -d $DATASET_PATH -t $THRESH -r $MAX_ROUNDS
 ```
 
----
 
 # Comprehensive Project Report: Adaptation of LTGC Framework to CIFAR-100 Long-Tailed Recognition
 
-**Date:** December 2, 2025
 **Subject:** Implementation and Domain Adaptation of "Long-tail Recognition via Leveraging LLMs-driven Generated Content"
 **Target Domain:** CIFAR-100 Long-Tailed Dataset
-
----
 
 ## 1. Introduction
 
@@ -108,8 +104,6 @@ The original LTGC was benchmarked on high-resolution datasets (ImageNet-LT). Thi
 1.  **Low Resolution (32x32):** Making feature extraction harder for both real and generated images.
 2.  **High Imbalance (Ratio=100):** Head classes have ~500 images, while Tail classes have only ~5.
 We aim to verify if generated content can boost tail performance in this challenging domain and analyze the trade-offs of different training strategies.
-
----
 
 ## 2. Methodology & Adaptation Process
 
@@ -128,8 +122,6 @@ A critical challenge in this adaptation was the unavailability of the official c
 * **Mechanism:** Standard sampling selects images based on their frequency (Head classes are picked 100x more often). Our `BalancedSampler` enforces a uniform probability $P(c) = 1/C$.
 * **Implication:** In every batch, the model sees an equal number of Head (Real) and Tail (Real + Generated) images. This forces the model to treat the generated tail data with the same importance as the abundant head data.
 
----
-
 ## 3. Experimental Setup
 
 * **Dataset:** CIFAR-100 Long-Tailed
@@ -144,8 +136,6 @@ A critical challenge in this adaptation was the unavailability of the official c
 * **Comparison Groups:**
     1.  **Baseline:** Original LT data only + Standard Sampling.
     2.  **LTGC (Gen + Balanced):** Generated data added + Custom `BalancedSampler`.
-
----
 
 ## 4. Key Results & Detailed Analysis
 
@@ -170,8 +160,6 @@ Conversely, we observed a consistent **drop in Head Accuracy** across all settin
 * **Phenomenon:** The model became significantly worse at recognizing the classes it had the most data for.
 * **Explanation:** In standard training (Baseline), the model relies on the **Prior Probability Bias**—it learns that "most inputs are dogs," which helps minimize global error. The `BalancedSampler` artificially removes this bias. By forcing the model to pay 50% attention to the difficult/noisy tail data and only 50% to the clean head data, the model effectively "underfits" the rich variations present in the 500 head images. This is a classic case of **"Catastrophic Forgetting"** of the majority concepts.
 
----
-
 ## 5. Ablation Study: Data vs. Strategy
 
 To determine whether the performance shift came from the *Generated Data itself* or the *Sampling Strategy*, we conducted an ablation study using Cross Entropy.
@@ -192,16 +180,12 @@ To determine whether the performance shift came from the *Generated Data itself*
 1.  **Data Presence is Not Enough (Gen Only):** Even with generated data, the Tail accuracy remained poor (0.40%). This proves that simply adding data isn't enough if the sampling frequency is still dominated by the Head classes. The gradients from the 500 head images overwhelm the gradients from the ~25 tail images (5 original + 20 generated).
 2.  **Sampling is the Driver (Gen + Balanced):** The surge to **8.77%** proves that re-balancing is the key mechanism that unlocks the value of the generated data. However, as noted, this aggressive sampling is what harms the Head performance.
 
----
-
 ## 6. Conclusion
 
 This report details the successful adaptation of the **LTGC framework** to the **CIFAR-100 Long-Tailed** domain.
 1.  **Feasibility:** We demonstrated that LMM-driven data generation is a viable strategy for augmenting low-resolution, long-tailed datasets.
 2.  **Efficacy:** The generated content, when properly sampled, yielded up to a **15x improvement** in Tail class recognition.
 3.  **Trade-off:** The "Training from Scratch" approach with hard balanced sampling results in a zero-sum trade-off between Head and Tail performance.
-
----
 
 ## 7. Discussion & Opinion: The Path to "Pareto Improvement"
 
